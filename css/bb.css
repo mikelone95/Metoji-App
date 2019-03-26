@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.html,
+body {
+    background: linear-gradient(180deg, rgba(163, 210, 237, 0.950276) 0%, #9AD4F4 100%);
+}
+
+.navbar-light {
+
+    color: black !important;
+}
+
+.bg-light {
+    background: transparent !important;
+}
+
+.fa-map-marker-alt,
+.fa-arrow-left {
+    color: black;
+    font-size: 20px;
+}
+
+.form-control {
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.bottone {
+    box-sizing: border-box;
+    background: #B8D8ED;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 22px 21px;
+   
+}
+h6{
+    font-size:20px;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.all{
+    overflow-x: hidden;
+}
+.container-fluid {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: normal;
+}
+
+.text-center1{
+ 
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: normal;
+
+color: #000000;
+
+}
+
+.container-fluid1{
+margin-top:36px;
+}
+
+.full-height{
+    min-height: calc(100vh - 36px);
+}
+
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: normal;
+    text-align: left;
+    color: #000000;
+    
+}
+
+
+/* Custom toogle */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 22px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toogle {
+    border-radius: 22px;
+    background: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  /*.toogle:before {
+    position: absolute;
+    content: "Piove";
+    color: rgb(216, 201, 201);
+    font-size: 14px;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.toogle:before {
+    content: "Piove";
+    left: 40px;
+  }*/
+  
+  .toogle:after {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid black;
+    background: white;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.toogle:after {
+
+    right: 44%;
+  }
+  
+  
+  /* animazioni! */
+  @keyframes salta {
+    0% {
+      bottom: 0;
+    }
+  
+    50% {
+      bottom: 100px;
+      transform: rotate(180deg) scale(0.8) skew(40deg);
+    }
+  
+    100% {
+      transform: rotate(-180deg) scale(20);
+      bottom: 20px;
+    }
+  }

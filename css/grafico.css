@@ -1,0 +1,113 @@
+.grafico{
+  overflow: hidden;
+  height: 90px;
+}
+
+.wind{
+    display: flex; 
+}
+
+/*
+.nuvole{
+    height: 100px;
+    margin:0 15%;
+}
+*/
+img.cloud{
+  height: 45px;
+}
+.cloud1{
+  margin-left: 40%;
+  height: 45px;
+  margin-bottom: 10%;
+}
+
+img.pale{
+  margin-top: 35px;
+  width: 45px;
+    
+}
+
+img.palo{
+  margin-top: -17px;
+  margin-left: 19px;
+    height: 35px;
+}
+
+.eolica{
+      /* padding: 40px; */
+      margin: 0 10% 0 -65%;
+      /* z-index: 1000; */
+      display: grid;
+}
+
+.tramonto{
+  display: flex;
+    justify-content: space-between;
+    margin: 0 4% 0 10%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+.box {
+  background-image: url("../img/grafico/lineaTrattegiata.svg");
+  width: 90%; 
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /* height: 100px; */
+    border: dashed 2px white;
+    /* border-color: white white transparent; */
+    border-radius: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .pale {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
