@@ -10,8 +10,8 @@
     
     }*/
 
-    body {background-image: url("../sfondoGiorno.jpg");
-            background:lightskyblue;
+    body {background-image: url("../sfondoGiorno.svg");
+        background:linear-gradient(180deg, rgba(163, 210, 237, 0.950276) 0%, #9AD4F4 100%);;
         margin: auto;
         color: black;
         
