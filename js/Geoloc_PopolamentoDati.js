@@ -53,6 +53,37 @@ function getCurrentWeather (){
 
             }
 
+            var sunrise = new Date((data.sys.sunrise)*1000);
+
+            function addZero(val)
+            {
+                if(val<10) 
+                return '0' + val;
+                else 
+                return val;
+            }
+
+            setTimeout(function()
+            {
+                var alba = new Date(addZero((data.sys.sunrise)*1000));
+                var tramonto = new Date(addZero((data.sys.sunset)*1000));
+                var hours1 = addZero(alba.getHours());
+                var minutes1 = addZero(alba.getMinutes());
+                var hours2 = addZero(tramonto.getHours());
+                var minutes2 = addZero(tramonto.getMinutes());
+                var sunrise = hours1 + ':' + minutes1;
+                var sunset = hours2 + ':' + minutes2;
+
+                $("#alba").text(sunrise);
+                $("#tramonto").text(sunset);
+
+            })
+
+
+
+    
+            
+
            
 
 
@@ -61,10 +92,10 @@ function getCurrentWeather (){
             
 
             var icons = {
-                "Clear" : "img/sole1.svg",
-                "Rain" : "img/Rain.svg",
-                "Clouds" :"img/nuvolo1.svg",
-                "Thunderstorm" :"img/Rain.svg",
+                "Clear" : "img/sole.svg",
+                "Rain" : "img/rain.svg",
+                "Clouds" :"img/nuvolo.svg",
+                "Thunderstorm" :"img/temporale.svg",
                 
 
 
@@ -100,7 +131,7 @@ function getCurrentWeather (){
             $("#citta").text(currentData.name);
             $("#view").text((currentData.visibility) + "m");
             
-            //$("#vento").getCurrentWeather(currentData.wind);
+            
             
             
 
