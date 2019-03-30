@@ -53,6 +53,21 @@ p{
 
 }
 
+img.forecastDay{
+    width: 22px;
+    height: 22px;
+}
+
+img.alba2{
+    width: 43px;
+    
+}
+
+.albaTramonto{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
 
 
 span.temp{font-size: 96px;  }

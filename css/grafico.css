@@ -41,13 +41,13 @@ img.palo{
       display: grid;
 }
 
-.tramonto{
+/*.tramonto{
   display: flex;
     justify-content: space-between;
     margin: 0 4% 0 10%;
     margin-top: 10px;
     font-size: 12px;
-}
+}*/
 
 
 .box {
