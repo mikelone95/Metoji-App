@@ -10,8 +10,8 @@
     
     }*/
 
-    body {background-image: url("../sfondoGiorno.svg");
-        background:linear-gradient(180deg, rgba(163, 210, 237, 0.950276) 0%, #9AD4F4 100%);;
+    body {background-image: url("../giorno1.jpg");
+        /*background:linear-gradient(180deg, rgba(163, 210, 237, 0.950276) 0%, #9AD4F4 100%);*/
         margin: auto;
         color: black;
         
@@ -188,10 +188,35 @@ hr.dotted{
 }
 
 
+div.vento{
+    height: 55px;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between
+}
+
+div.wind{
+    display: grid;
+    margin-top: 20px;
+    justify-items: center;
+
+}
+
+div.dv{
+    display: grid;
+    margin-top: 20px;
+    justify-items: center;
+}
 
 
 
+.ven1{
+    margin-top: 10px;
+}
 
+.dir{
+    margin-top: 10px;
+}
 
 
 
